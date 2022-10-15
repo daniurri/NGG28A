@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "imagen"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "NGG28A"
+	}
+}
