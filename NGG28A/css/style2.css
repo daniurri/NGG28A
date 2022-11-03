@@ -1,3 +1,4 @@
+/*Animation Background*/
 html, body {
     height: 100%;
   }
@@ -82,28 +83,39 @@ html, body {
     }
   }
 
+/**/
 .upper-container{
     height: 100px;
-    background-color: #e5e5f7;
+    background-color: rgb(81, 79, 79);
     
 }
 
 .Container{
-    background-color: hsl(0,0%,100%);
+  display: inline;
+  height: 500px;
+  width: auto;
+}
+
+.Card{
+    background-color: rgba(81, 79, 79, 0.599);
     text-align: center;
     border-radius: 15px;
     overflow: hidden;
-    height: 250px;
-    width: auto;
+    height: 180px;
+    width: 180px;   
+    position: absolute;
+    margin: -45% auto auto 75%;
 }
 .img-sec{
-    width: 80px;
-    height: 100px;
+    width: 90px;
+    height: 110px;
     border-radius: 100%;
     overflow: hidden;
-    margin: -60px auto 50px 44%;
+    margin: -90px auto auto 22%;
     border: 3px solid hsl(0,0%,100%);
     position: absolute;
+    
+    
 }
 .img-sec img{  
     width: 100%;     
@@ -114,4 +126,53 @@ html, body {
     margin-bottom: -75px;
     height: 250px;
     line-height: 1.8rem;   
+}
+
+.card-body img {
+  width: 40px;
+  border-radius: 20%; 
+  margin-top: -15%;
+  padding: 2%;
+}
+/*Animation Text*/
+.AniTxt {
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 10vw;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+          animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+@-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+
+.text {
+  display: inline-block;
+  margin: auto auto auto auto;
 }
